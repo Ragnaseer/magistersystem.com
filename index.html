@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Magister System</title>
+    <link rel="icon" type="image/png" href="favicon.png" />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <main>
+      <div class="logo-container">
+        <img
+          src="Magister%20System%20Long%20-%20Master.svg"
+          alt="Magister System"
+        />
+        <div class="logo-actions">
+          <button id="about-button" type="button" aria-haspopup="dialog">
+            About
+          </button>
+          <button id="features-button" type="button" aria-haspopup="dialog">
+            Features
+          </button>
+          <button id="schools-button" type="button" aria-haspopup="dialog">
+            Schools (1)
+          </button>
+          <button id="inquire-button" type="button" aria-haspopup="dialog">
+            Inquire
+          </button>
+        </div>
+        <footer class="site-footer">
+          <div>Made by <a href="https://portfolio-luke.web.app/" target="_blank" rel="noopener noreferrer">Lukas Banaag</a> 2026.</div>
+          <div class="copyright">© 2026 <a class="copyright-name" href="https://portfolio-luke.web.app/" target="_blank" rel="noopener noreferrer">Lukas Banaag</a>. All rights reserved.</div>
+        </footer>
+      </div>
+      <dialog id="about-dialog" aria-labelledby="about-title">
+        <h1 id="about-title">About Magister</h1>
+        <p>
+          Magister is a school management system that brings student records,
+          enrollment, grading, attendance, scheduling, and official reports
+          together in one place.
+        </p>
+        <p>
+          With dedicated tools for accounting, clinic, guidance, and library
+          services, it helps school staff manage everyday operations through
+          role-based access.
+        </p>
+        <form method="dialog"><button type="submit">Close</button></form>
+      </dialog>
+      <dialog id="schools-dialog" aria-labelledby="schools-title">
+        <h1 id="schools-title">Running in Schools</h1>
+        <p>Parañaque School (1)</p>
+        <form method="dialog"><button type="submit">Close</button></form>
+      </dialog>
+      <dialog id="features-dialog" aria-labelledby="features-title">
+        <h1 id="features-title">Magister Features</h1>
+        <p>Connected tools for school administration, academics, and student services.</p>
+        <div class="feature-list">
+          <section>
+            <h2>Dashboard</h2>
+            <ul><li>Role-based workspace and school overview</li><li>Academic and scheduling summaries</li></ul>
+          </section>
+          <section>
+            <h2>Student Records &amp; Enrollment</h2>
+            <ul><li>Student directory, profiles, photos, and guardian information</li><li>Student registration and enrollment management</li><li>Supporting documents and attachments</li><li>Section assignment, section rosters, and change history</li><li>Student subject loading</li><li>Junior and senior high school transcripts</li></ul>
+          </section>
+          <section>
+            <h2>Grades &amp; Advisory</h2>
+            <ul><li>Subject gradebooks and grading components</li><li>Grade calculations, transmutation, and finalization</li><li>Grading-period locks</li><li>Student grade details and academic charts</li><li>Advisory class management</li><li>Attendance and student traits</li><li>Class rankings, master sheets, and printable grade sheets</li></ul>
+          </section>
+          <section>
+            <h2>Academic Setup &amp; Scheduling</h2>
+            <ul><li>School years, divisions, academic structure, and grade levels</li><li>Sections and school-year defaults</li><li>Subjects and electives</li><li>Teacher assignments and class advisers</li><li>Class offerings and assigned classes</li><li>Class schedules and section schedule boards</li><li>Teacher substitutions</li><li>Grading periods, grading rules, and transmutation tables</li><li>Honor rules and attendance and trait settings</li></ul>
+          </section>
+          <section>
+            <h2>Reports &amp; Official Records</h2>
+            <ul><li>Report cards and configurable report-card layouts</li><li>Official academic records</li><li>JHS Form 137 and SHS SF10 editing and printing</li><li>Configurable grading periods and historical academic records</li><li>Honors, rankings, and awardee reports</li><li>Student demographics</li><li>Paper-size options and multipage printing</li><li>Remarks templates, issue dates, and electronic signatories</li></ul>
+          </section>
+          <section>
+            <h2>Accounting</h2>
+            <ul><li>Cashier workspace</li><li>Billing and payment setup</li><li>Student ledger assessments</li><li>Payments, receipts, and transaction records</li><li>Receipt settings and printable accounting reports</li></ul>
+          </section>
+          <section>
+            <h2>Student Services</h2>
+            <ul><li>Clinic records and file attachments</li><li>Guidance and conduct records</li><li>Conduct adjustments, disciplinary actions, and remarks</li><li>Missing-conduct overview and printable conduct reports</li><li>Library workspace and book catalog</li></ul>
+          </section>
+          <section>
+            <h2>Users &amp; Access</h2>
+            <ul><li>User creation, management, and past-user records</li><li>Roles with configurable read and write permissions</li><li>Administrator, principal, registrar, teacher, accountant, nurse, guidance, and librarian access</li><li>User profiles, profile photos, and signatures</li><li>People directory</li><li>Activity logs</li></ul>
+          </section>
+          <section>
+            <h2>School Branding &amp; Settings</h2>
+            <ul><li>School profile and logo library</li><li>Signatory directory and electronic signatures</li><li>School branding on printed records</li><li>Security, session, and login-attempt settings</li><li>Privacy and record settings</li><li>Appearance settings and light and dark themes</li></ul>
+          </section>
+        </div>
+        <form method="dialog"><button type="submit">Close</button></form>
+      </dialog>
+      <dialog id="inquire-dialog" aria-labelledby="inquire-title">
+        <h1 id="inquire-title">Inquire</h1>
+        <p>For inquiries about Magister System, email:</p>
+        <p><a href="mailto:lukasrodban@gmail.com?subject=Magister%20System%20Inquiry">lukasrodban@gmail.com</a></p>
+        <button id="copy-email" type="button">Copy email</button>
+        <p id="copy-status" role="status"></p>
+        <form method="dialog"><button type="submit">Close</button></form>
+      </dialog>
+    </main>
+  </body>
+</html>
