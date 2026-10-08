@@ -6,7 +6,7 @@ body {
   margin: 0;
   background: #fff;
   color: #222;
-  font-family: Arial, sans-serif;
+  font-family: system-ui, sans-serif;
 }
 
 main {
@@ -68,7 +68,8 @@ button:focus-visible,
 dialog {
   width: min(480px, calc(100% - 48px));
   max-height: calc(100svh - 48px);
-  padding: 30px;
+  padding: 0;
+  overflow-y: auto;
   border: 1px solid #ddd;
   border-radius: 10px;
 }
@@ -108,19 +109,55 @@ dialog[open]::backdrop {
   }
 }
 
+.modal-header {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 20px 24px;
+  background: #fff;
+  border-bottom: 1px solid #eee;
+}
+
 dialog h1 {
-  margin: 0 0 20px;
+  margin: 0;
   font-size: 24px;
+}
+
+.modal-content {
+  padding: 8px 24px 24px;
+}
+
+.modal-close-form {
+  margin: 0;
+  flex-shrink: 0;
+}
+
+.modal-close {
+  display: grid;
+  place-items: center;
+  width: 36px;
+  height: 36px;
+  padding: 0;
+  border: 0;
+  border-radius: 50%;
+  background: #dc2626;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.modal-close:hover {
+  background: #b91c1c;
 }
 
 dialog p {
   font-size: 15px;
   line-height: 1.7;
   color: #555;
-}
-
-dialog form {
-  margin-top: 24px;
 }
 
 #features-dialog {
